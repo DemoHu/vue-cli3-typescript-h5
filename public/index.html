@@ -1,17 +1,49 @@
+<!--
+ * @Author: Siwen
+ * @Date: 2019-08-23 10:17:56
+ * @LastEditors: Siwen
+ * @LastEditTime: 2019-08-23 11:06:15
+ * @Description: 
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>x-star</title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but x-star doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <!-- 线上环境使用cdn -->
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+      <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+    <% } %>
   </body>
 </html>
+<script>
+  window.onload = function() {
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function(event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    });
+    document.addEventListener('touchend', function(event) {
+      var now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+    // safari 阻止双指
+    document.addEventListener('gesturestart', function (event) {
+      event.preventDefault();
+    });
+  }
+</script>
