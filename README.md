@@ -1,4 +1,4 @@
-# x-star
+# vue-cli3+TypeScript的H5项目模版
 
 ## Project setup
 ```
