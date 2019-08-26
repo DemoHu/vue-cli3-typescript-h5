@@ -7,6 +7,9 @@
 body {
   height: 100%;
   color: $white;
+  background-image: linear-gradient(-90deg, 
+        #0d042a 0%, 
+        #120559 100%);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

@@ -2,7 +2,7 @@
  * @Author: Siwen
  * @Date: 2019-08-08 13:47:01
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-22 11:48:21
+ * @LastEditTime: 2019-08-26 11:24:06
  * @Description: axios封装
  */
 import axios from 'axios'
@@ -34,7 +34,7 @@ const noCancelPending: string[] = ['/order/createQuiz']
 //request 拦截器
 axios.interceptors.request.use(
   config => {
-    // config.headers['Access-Control-Allow-Origin'] = 'https://www.chainlottery.io'
+    config.headers['AHost'] = 'x_star'
     // 防止重复请求 ↓↓↓↓
     if (!noCancelPending.includes(config.url as string)) {
       cancelPending(config)

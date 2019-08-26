@@ -2,23 +2,22 @@
  * @Author: Siwen
  * @Date: 2019-08-23 10:17:56
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-23 11:12:32
+ * @LastEditTime: 2019-08-26 11:47:48
  * @Description: Home
  -->
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <tabbar></tabbar>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import HelloWorld from '@/components/HelloWorld.vue'
+import Tabbar from '@/components/Tabbar.vue'
 
 @Component({
   components: {
-    HelloWorld
+    Tabbar
   }
 })
 export default class Home extends Vue {}

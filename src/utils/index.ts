@@ -2,7 +2,7 @@
  * @Author: Siwen
  * @Date: 2019-08-08 15:20:52
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-14 16:53:49
+ * @LastEditTime: 2019-08-26 10:27:24
  * @Description: utils 工具类
  */
 export default {
@@ -74,6 +74,10 @@ export default {
         -(v.length > 2 ? v.length : 2)
       )
     })
+  },
+  isPhone(num : any) {
+    var reg = /^1[123456789]\d{9}$/
+    return reg.test(num)
   },
   /**
    * 保留n位小数
