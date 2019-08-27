@@ -2,7 +2,7 @@
  * @Author: Siwen
  * @Date: 2019-08-23 10:17:56
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-26 17:18:26
+ * @LastEditTime: 2019-08-27 11:36:13
  * @Description: App
  -->
 <template>
@@ -40,12 +40,16 @@ export default class App extends Vue {
 }
 </script>
 <style lang="scss">
+#app {
+  width: 100%;
+  height: 100%;
+}
 .slide-right-enter-active,
 .slide-right-leave-active,
 .slide-left-enter-active,
 .slide-left-leave-active {
   will-change: transform;
-  transition: all 450ms;
+  transition: all 400ms;
   position: absolute;
   top: 0;
   left: 0;

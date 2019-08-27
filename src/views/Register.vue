@@ -45,8 +45,8 @@ export default class Register extends Vue {
 </script>
 <style lang='scss'>
 .register_view {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   @include background-func('../assets/main_bg.png');
   display: flex;
   flex-direction: column;

@@ -2,7 +2,7 @@
  * @Author: Siwen
  * @Date: 2019-08-26 14:34:48
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-26 15:29:45
+ * @LastEditTime: 2019-08-26 17:24:50
  * @Description: 订单记录
  -->
 <template>
@@ -77,15 +77,15 @@ export default class Order extends Vue {
 </script>
 <style lang='scss'>
 .order_view {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #f5f5f5;
   .refresh_box {
-    height: calc(100vh - 44px);
+    height: calc(100% - 44px);
     overflow-y: auto;
     background-color: #fff;
     .van-pull-refresh__track {
-      height: calc(100vh - 44px);
+      height: calc(100% - 44px);
       .item_order {
         display: flex;
         align-items: center;

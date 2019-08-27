@@ -50,8 +50,8 @@ export default class Center extends Vue {
 </script>
 <style lang='scss'>
 .center_view {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #f5f5f5;
   position: relative;
   .center_top {

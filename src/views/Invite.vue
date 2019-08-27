@@ -2,7 +2,7 @@
  * @Author: Siwen
  * @Date: 2019-08-26 15:24:04
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-26 16:08:44
+ * @LastEditTime: 2019-08-27 11:05:07
  * @Description: 我的邀请
  -->
 <template>
@@ -37,8 +37,8 @@ export default class Invite extends Vue {
 </script>
 <style lang='scss'>
 .invite_view {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   @include background-func('../assets/main_bg.png');
   display: flex;
   flex-direction: column;
@@ -49,24 +49,24 @@ export default class Invite extends Vue {
   }
   .container {
     width: 90%;
-    height: 80%;
-    overflow-y: hidden;
+    height: 82%;
+    overflow-y: auto;
     border-radius: 10px;
     background-color: #fff;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     .tips {
       font-size: 15px;
       color: #666;
-      margin-top: 26px;
+      margin-top: 24px;
     }
     .invite_code_tips {
       font-size: 13px;
-      margin-top: 34px;
-      margin-bottom: 25px;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
     h3 {
       font-size: 28px;
@@ -85,8 +85,8 @@ export default class Invite extends Vue {
       border-radius: 3px;
       font-size: 16px;
       color: #fff;
-      margin-top: 30px;
-      margin-bottom: 27px;
+      margin-top: 20px;
+      margin-bottom: 24px;
     }
     .rorward {
       font-size: 15px;
@@ -101,16 +101,18 @@ export default class Invite extends Vue {
       width: 90%;
       height: 1px;
       margin-top: 25px;
-      border-bottom: .5px dashed #5f89f5;
+      border-bottom: 1px dashed #5f89f5;
     }
     .qrcode_box {
-      width: 110px;
-      height: 110px;
       margin-top: 25px;
-      border: .7px solid #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      canvas {
+        width: 110px;
+        height: 110px;
+        border: 1px solid #ddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
     .scanning_tips {
       font-size: 12px;

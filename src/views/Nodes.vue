@@ -2,7 +2,7 @@
  * @Author: Siwen
  * @Date: 2019-08-26 11:49:53
  * @LastEditors: Siwen
- * @LastEditTime: 2019-08-26 13:57:32
+ * @LastEditTime: 2019-08-27 10:58:56
  * @Description: 节点申请
  -->
 <template>
@@ -81,8 +81,8 @@ export default class Nodes extends Vue {
 </script>
 <style lang='scss'>
 .nodes_view {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -163,7 +163,7 @@ export default class Nodes extends Vue {
       height: 50px;
       background-color: #fff;
       border-radius: 3px;
-      border: solid 0.5px #ccc;
+      border: solid 1px #ccc;
       margin-bottom: 20px;
       padding-left: 10px;
       font-size: 15px;

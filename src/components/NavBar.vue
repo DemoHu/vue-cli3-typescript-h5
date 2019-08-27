@@ -28,7 +28,7 @@ export default class NavBar extends Vue {
 </script>
 <style lang='scss'>
 .nav_bar {
-  width: 100vw;
+  width: 100%;
   height: 44px;
   background-color: #02041c;
   display: flex;

@@ -64,8 +64,8 @@ export default class Explain extends Vue {
 </script>
 <style lang='scss'>
 .explain_view {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   .top_box {
     width: 100%;
@@ -78,8 +78,8 @@ export default class Explain extends Vue {
     }
   }
   .container {
-    width: 100vw;
-    height: calc(100vh - 160px);
+    width: 100%;
+    height: calc(100% - 160px);
     overflow-y: auto;
     padding-bottom: 80px;
     .title {
